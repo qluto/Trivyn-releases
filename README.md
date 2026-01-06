@@ -1,16 +1,16 @@
-# Triskly - Public Releases
+# Trivyn - Public Releases
 
-このリポジトリは [Triskly](https://github.com/qluto/Tria) の公開リリース用リポジトリです。
+このリポジトリは [Trivyn](https://github.com/qluto/Tria) の公開リリース用リポジトリです。
 
 ## ダウンロード
 
-👉 **[ダウンロードページ](https://qluto.github.io/Triskly-releases/)**
+👉 **[ダウンロードページ](https://qluto.github.io/Trivyn-releases/)**
 
-または [Releases](https://github.com/qluto/Triskly-releases/releases) から直接ダウンロードできます。
+または [Releases](https://github.com/qluto/Trivyn-releases/releases) から直接ダウンロードできます。
 
-## Triskly とは？
+## Trivyn とは？
 
-Trisklyは「Three Wins」メソッドを実装したシンプルな目標管理アプリです。
+Trivynは「Three Wins」メソッドを実装したシンプルな目標管理アプリです。
 
 - 今日の3つの目標
 - 今週の3つの目標

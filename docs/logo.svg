@@ -8,7 +8,7 @@
   </defs>
 
   <g transform="translate(256, 256) rotate(20)">
-    <g fill="none" stroke="url(#gradient)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#e8e8e8" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
       <!-- 1つ目 -->
       <g transform="rotate(0) translate(0, -95)">
         <path d="M-60,12 L-12,60 L84,-84" />

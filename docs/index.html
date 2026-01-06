@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triskly - Three Wins</title>
+    <title>Trivyn - Three Wins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -28,7 +28,11 @@
 
         body {
             font-family: var(--font-display);
-            background: var(--color-bg);
+            background:
+                radial-gradient(ellipse at top left, rgba(255, 107, 53, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at top right, rgba(78, 205, 196, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(160, 108, 213, 0.03) 0%, transparent 50%),
+                var(--color-bg);
             color: var(--color-fg);
             line-height: 1.6;
             overflow-x: hidden;
@@ -82,8 +86,8 @@
             align-items: center;
             gap: 10px;
             padding: 8px 18px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(78, 205, 196, 0.08);
+            border: 1px solid rgba(78, 205, 196, 0.2);
             border-radius: 100px;
             font-family: var(--font-mono);
             font-size: 13px;
@@ -147,6 +151,24 @@
 
         .platform-card:hover::before {
             transform: scaleX(1);
+        }
+
+        .platform-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent-color);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            opacity: 0.3;
+        }
+
+        .platform-card:hover::after {
+            transform: scaleY(1);
         }
 
         .platform-card:nth-child(1) {
@@ -336,8 +358,8 @@
 </head>
 <body>
     <div class="hero">
-        <img src="logo.svg" alt="Triskly Logo" class="hero-logo">
-        <h1 class="hero-title">Triskly</h1>
+        <img src="logo.svg" alt="Trivyn Logo" class="hero-logo">
+        <h1 class="hero-title">Trivyn</h1>
         <p class="hero-subtitle">Three Wins Productivity</p>
         <p class="hero-description">
             今日、今週、今月。それぞれ3つの目標に集中する。<br>
@@ -398,17 +420,17 @@
 
     <footer class="footer">
         <div class="footer-links">
-            <a href="https://github.com/qluto/Triskly-releases/releases" class="footer-link" target="_blank">
+            <a href="https://github.com/qluto/Trivyn-releases/releases" class="footer-link" target="_blank">
                 <span>📦</span>
                 <span>All Releases</span>
             </a>
-            <a href="https://github.com/qluto/Triskly-releases" class="footer-link" target="_blank">
+            <a href="https://github.com/qluto/Trivyn-releases" class="footer-link" target="_blank">
                 <span>⚡</span>
                 <span>GitHub</span>
             </a>
         </div>
         <div class="footer-link">
-            <span>© 2025 Triskly</span>
+            <span>© 2025 Trivyn</span>
         </div>
     </footer>
 
@@ -418,7 +440,7 @@
             const versionText = document.getElementById('version-text');
 
             try {
-                const response = await fetch('https://api.github.com/repos/qluto/Triskly-releases/releases/latest');
+                const response = await fetch('https://api.github.com/repos/qluto/Trivyn-releases/releases/latest');
 
                 if (!response.ok) {
                     throw new Error('Failed to fetch releases');
