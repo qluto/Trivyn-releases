@@ -1,29 +1,29 @@
 # Trivyn - Public Releases
 
-このリポジトリは [Trivyn](https://github.com/qluto/Tria) の公開リリース用リポジトリです。
+This repository hosts public releases for [Trivyn](https://github.com/qluto/Tria).
 
-## ダウンロード
+## Download
 
-👉 **[ダウンロードページ](https://qluto.github.io/Trivyn-releases/)**
+👉 **[Download Page](https://qluto.github.io/Trivyn-releases/)**
 
-または [Releases](https://github.com/qluto/Trivyn-releases/releases) から直接ダウンロードできます。
+Or download directly from [Releases](https://github.com/qluto/Trivyn-releases/releases).
 
-## Trivyn とは？
+## What is Trivyn?
 
-Trivynは「Three Wins」メソッドを実装したシンプルな目標管理アプリです。
+Trivyn is a simple goal management app implementing the "Three Wins" method.
 
-- 今日の3つの目標
-- 今週の3つの目標
-- 今月の3つの目標
+- 3 goals for today
+- 3 goals for this week
+- 3 goals for this month
 
-それぞれのタイムフレームで3つの重要な目標に集中することで、生産性を高めます。
+Focus on three important goals in each timeframe to boost your productivity.
 
-## サポートプラットフォーム
+## Supported Platforms
 
 - macOS (Apple Silicon & Intel)
 - Windows (x64)
 - Linux (Debian/Ubuntu, AppImage)
 
-## ライセンス
+## License
 
 © 2025 qluto
